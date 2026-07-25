@@ -72,25 +72,13 @@ export default function ProjectsPage() {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 border border-border">
-            {localizedProjects.map((project, i) => {
-              const isLeftCol = i % 2 === 0
-              const isLastRow = i >= localizedProjects.length - (localizedProjects.length % 2 === 0 ? 2 : 1)
-              return (
-                <ProjectCard
-                  key={project.id}
-                  {...project}
-                  className={[
-                    'border-0',
-                    isLeftCol && i < localizedProjects.length - 1 ? 'md:border-r border-border' : '',
-                    !isLastRow || (localizedProjects.length % 2 !== 0 && i < localizedProjects.length - 1)
-                      ? 'border-b border-border'
-                      : '',
-                    localizedProjects.length % 2 === 0 && isLastRow ? '' : '',
-                  ].join(' ')}
-                />
-              )
-            })}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {localizedProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                {...project}
+              />
+            ))}
           </div>
         </Container>
       </Section>
@@ -147,7 +135,7 @@ export default function ProjectsPage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-              <CTAButton href={`mailto:${personalData.contact.email}`} variant="primary" external>
+              <CTAButton href={personalData.contact.emailUrl} variant="primary" external>
                 {t.projects.getInTouch}
                 <ArrowUpRight size={14} className="ml-2" aria-hidden="true" />
               </CTAButton>

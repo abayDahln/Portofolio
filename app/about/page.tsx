@@ -25,7 +25,7 @@ export default function AboutPage() {
       {/* ── BIOGRAPHY & ABOUT ────────────────────────────── */}
       <Section borderBottom>
         <Container>
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 lg:gap-20">
             {/* Sidebar */}
             <div>
               <SectionLabel>{t.about.pageTitle}</SectionLabel>
@@ -36,7 +36,7 @@ export default function AboutPage() {
                 aria-label={personalData.name}
               >
                 <Image
-                  src="/abby_light.png"
+                  src="/abby_light.webp"
                   alt={personalData.name}
                   fill
                   priority
@@ -44,7 +44,7 @@ export default function AboutPage() {
                   className="object-cover block dark:hidden"
                 />
                 <Image
-                  src="/abby_dark.png"
+                  src="/abby_dark.webp"
                   alt={personalData.name}
                   fill
                   priority
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
             {/* Bio content */}
             <div className="space-y-5">
-              <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-none mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-none mb-6">
                 {personalData.name}
               </h1>
               <p className="text-lg md:text-xl font-medium leading-relaxed tracking-tight">
@@ -86,7 +86,7 @@ export default function AboutPage() {
                 {t.about.body}
               </p>
               <div className="pt-4 flex flex-wrap gap-3">
-                <CTAButton href={`mailto:${personalData.contact.email}`} variant="primary" external>
+                <CTAButton href={personalData.contact.emailUrl} variant="primary" external>
                   {t.about.sayHello}
                   <ArrowUpRight size={14} className="ml-2" aria-hidden="true" />
                 </CTAButton>
@@ -152,7 +152,7 @@ export default function AboutPage() {
             ))}
           </div>
         </Container>
-      </Section>
+      </Section>  
 
       {/* ── VALUES STRIP ─────────────────────────────────── */}
       {/* <Section borderBottom tight>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                 {t.about.readyToBuild}
               </h2>
             </div>
-            <CTAButton href={`mailto:${personalData.contact.email}`} variant="primary" size="lg" external>
+            <CTAButton href={personalData.contact.emailUrl} variant="primary" size="lg" external>
               {t.about.sendMessage}
               <ArrowUpRight size={16} className="ml-2" aria-hidden="true" />
             </CTAButton>

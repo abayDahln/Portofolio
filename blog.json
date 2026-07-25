@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "date": "2025-06-12",
+    "date_display": "Jun 12, 2025",
+    "title_id": "Mengapa Saya Membuat Segalanya dari Nol",
+    "title_en": "Why I Build Everything From Scratch",
+    "excerpt_id": "Refleksi jujur tentang obsesi membangun alat dari dasar dan apa yang telah diajarkan tentang desain perangkat lunak dan trade-off.",
+    "excerpt_en": "An honest reflection on the obsession with building tools from the ground up, and what it has taught me about software design and trade-offs.",
+    "content_id": "Pernahkah Anda bertanya-tanya mengapa seseorang memilih untuk membangun sesuatu dari nol ketika sudah ada solusi siap pakai? Bagi saya, ini bukan tentang menciptakan roda lagi — ini tentang memahami cara kerja roda sebenarnya.\n\nKetika saya memulai Exom Browser, banyak orang bertanya, \"Kenapa tidak pakai Chromium saja?\" Tapi di situlah letak keindahannya. Dengan membangun dari nol, saya bisa memahami setiap lapisan arsitektur browser, dari rendering engine hingga networking stack.\n\nPerjalanan ini mengajari saya bahwa batasan adalah guru terbaik. Ketika Anda tidak bisa mengandalkan framework atau library, Anda dipaksa untuk berpikir keras tentang desain fundamental. Anda belajar tentang trade-off yang nyata, bukan hanya abstraksi tingkat tinggi.\n\nSaya telah belajar bahwa membangun dari nol bukan untuk semua orang, dan tidak seharusnya begitu. Tapi bagi mereka yang ingin benar-benar memahami, tidak ada jalan pintas.",
+    "content_en": "Have you ever wondered why someone would choose to build something from scratch when ready-made solutions already exist? For me, it is not about reinventing the wheel — it is about understanding how the wheel actually works.\n\nWhen I started Exom Browser, many people asked, \"Why not just use Chromium?\" But that is precisely where the beauty lies. By building from scratch, I could understand every layer of browser architecture, from the rendering engine to the networking stack.\n\nThis journey taught me that constraints are the best teachers. When you cannot rely on frameworks or libraries, you are forced to think hard about fundamental design. You learn about real trade-offs, not just high-level abstractions.\n\nI have learned that building from scratch is not for everyone, nor should it be. But for those who want true understanding, there are no shortcuts.",
+    "read_time_id": "5 menit baca",
+    "read_time_en": "5 min read",
+    "slug": "/post/1"
+  },
+  {
+    "id": 2,
+    "date": "2025-04-28",
+    "date_display": "Apr 28, 2025",
+    "title_id": "Alasan untuk Brutalist UI",
+    "title_en": "The Case for Brutalist UI",
+    "excerpt_id": "Batas datar, teks hitam, ruang putih. Menjelajahi mengapa menghilangkan ornamentasi sering menghasilkan antarmuka yang lebih jujur dan efektif.",
+    "excerpt_en": "Flat borders, black text, white space. Exploring why removing ornamentation often leads to better, more honest interfaces.",
+    "content_id": "Brutalist design dalam UI sering disalahpahami sebagai \"tidak dirancang.\" Tetapi kenyataannya, brutalisme adalah tentang kejujuran — menampilkan fungsi tanpa hiasan yang tidak perlu.\n\nDi dunia di mana setiap situs web berlomba-lomba memiliki gradien, bayangan, dan animasi yang rumit, pendekatan brutalist terasa seperti napas segar. Ini tentang menghilangkan gangguan dan fokus pada apa yang penting: konten.\n\nPortfolio saya sendiri mengadopsi prinsip ini. Border hitam pekat, tidak ada border-radius, palet monokrom, tipografi yang berani. Keputusan desain ini bukan kebetulan — setiap elemen memiliki tujuan.\n\nSaya telah menemukan bahwa batasan desain yang ketat justru mendorong kreativitas. Ketika Anda tidak bisa mengandalkan trik visual, Anda harus berpikir lebih keras tentang hierarki, tipografi, dan ritme spasial.",
+    "content_en": "Brutalist design in UI is often misunderstood as \"not designed.\" But the truth is, brutalism is about honesty — presenting function without unnecessary embellishment.\n\nIn a world where every website competes with gradients, shadows, and elaborate animations, a brutalist approach feels like a breath of fresh air. It is about stripping away distractions and focusing on what matters: the content.\n\nMy own portfolio adopts this principle. Solid black borders, zero border-radius, monochrome palette, bold typography. These design decisions are not accidental — every element has a purpose.\n\nI have found that tight design constraints actually drive creativity. When you cannot rely on visual tricks, you must think harder about hierarchy, typography, and spatial rhythm.",
+    "read_time_id": "7 menit baca",
+    "read_time_en": "7 min read",
+    "slug": "/post/2"
+  },
+  {
+    "id": 3,
+    "date": "2025-03-05",
+    "date_display": "Mar 05, 2025",
+    "title_id": "Rust untuk Pengembang Frontend",
+    "title_en": "Rust for Frontend Developers",
+    "excerpt_id": "Pengantar praktis tentang Rust bagi mereka yang hidup di dunia JavaScript. Mengapa ini penting dan di mana memulai tanpa kewalahan.",
+    "excerpt_en": "A practical introduction to Rust for those who live in JavaScript land. Why it matters and where to start without getting overwhelmed.",
+    "content_id": "Rust telah mendapatkan reputasi sebagai bahasa yang sulit dipelajari. Dan memang, kurva pembelajarannya cukup curam. Tapi bagi pengembang frontend yang ingin memperluas wawasan, Rust menawarkan perspektif baru tentang manajemen memori, konkurensi, dan keamanan tipe.\n\nYang menarik adalah bagaimana konsep ownership dan borrowing di Rust memaksa Anda untuk berpikir secara berbeda tentang data. Setelah Anda memahami pola ini, Anda akan menemukan bahwa banyak prinsip yang sama berlaku di JavaScript — hanya saja tidak dieksplisitkan.\n\nMulailah dengan Rustlings untuk latihan interaktif, lalu coba buat alat CLI sederhana. Anda akan terkejut betapa memuaskannya ketika program Rust Anda berhasil dikompilasi tanpa error.",
+    "content_en": "Rust has gained a reputation as a difficult language to learn. And indeed, its learning curve is quite steep. But for frontend developers looking to expand their horizons, Rust offers a fresh perspective on memory management, concurrency, and type safety.\n\nWhat is fascinating is how Rust's ownership and borrowing concepts force you to think differently about data. Once you understand these patterns, you will find that many of the same principles apply in JavaScript — they are just not made explicit.\n\nStart with Rustlings for interactive exercises, then try building a simple CLI tool. You will be surprised how satisfying it is when your Rust program compiles without errors.",
+    "read_time_id": "9 menit baca",
+    "read_time_en": "9 min read",
+    "slug": "/post/3"
+  },
+  {
+    "id": 4,
+    "date": "2025-01-17",
+    "date_display": "Jan 17, 2025",
+    "title_id": "Merancang dengan Batasan",
+    "title_en": "Designing With Constraints",
+    "excerpt_id": "Bagaimana bekerja dalam palet monokrom yang ketat membuat saya berpikir lebih keras tentang tipografi, hierarki, dan ritme spasial.",
+    "excerpt_en": "How working within a strict monochrome palette forced me to think harder about typography, hierarchy, and spatial rhythm.",
+    "content_id": "Portfolio ini adalah bukti hidup dari filosofi \"design with constraints.\" Dengan membatasi diri pada palet monokrom dan border tanpa radius, saya dipaksa untuk membuat keputusan desain yang lebih cermat.\n\nTanpa warna sebagai alat pembeda, saya harus mengandalkan tipografi, hierarki, dan ritme spasial untuk memandu mata pengguna. Setiap pilihan font, setiap ukuran heading, setiap jarak antar elemen menjadi krusial.\n\nBatasan bukanlah musuh kreativitas — justru sebaliknya. Ketika Anda tidak bisa mengandalkan trik visual murahan, Anda dipaksa untuk memahami prinsip desain yang fundamental.\n\nSaya mendorong setiap desainer untuk mencoba bekerja dengan batasan ketat. Anda akan terkejut dengan apa yang bisa Anda hasilkan.",
+    "content_en": "This portfolio is a living proof of the \"design with constraints\" philosophy. By limiting myself to a monochrome palette and zero-radius borders, I was forced to make more deliberate design decisions.\n\nWithout color as a differentiator, I had to rely on typography, hierarchy, and spatial rhythm to guide the user's eye. Every font choice, every heading size, every spacing between elements became crucial.\n\nConstraints are not the enemy of creativity — quite the opposite. When you cannot rely on cheap visual tricks, you are forced to understand fundamental design principles.\n\nI encourage every designer to try working with tight constraints. You will be surprised by what you can produce.",
+    "read_time_id": "4 menit baca",
+    "read_time_en": "4 min read",
+    "slug": "/post/4"
+  },
+  {
+    "id": 5,
+    "date": "2024-11-30",
+    "date_display": "Nov 30, 2024",
+    "title_id": "Tentang Merilis dengan Lambat",
+    "title_en": "On Shipping Slowly",
+    "excerpt_id": "Secara kontradiktif, memperlambat ritme rilis justru meningkatkan kualitas dan penerimaan setiap proyek yang saya kirim.",
+    "excerpt_en": "Counterintuitively, slowing down my release cadence improved both the quality and the reception of every project I shipped.",
+    "content_id": "Dalam industri yang selalu mendorong kita untuk \"ship fast and break things,\" saya justru menemukan bahwa merilis dengan lambat — dengan sengaja — menghasilkan produk yang lebih baik dan lebih dihargai.\n\nButuh waktu bagi saya untuk menyadari bahwa kecepatan bukanlah satu-satunya metrik kesuksesan. Ketika saya melambat, saya memberi diri saya ruang untuk berpikir, merefleksikan, dan menyempurnakan.\n\nSekarang, saya mengadopsi pendekatan yang lebih disengaja. Setiap rilis harus memiliki tujuan yang jelas. Tidak ada lagi fitur yang ditambahkan hanya karena \"kenapa tidak.\"\n\nHasilnya? Produk yang lebih solid, pengguna yang lebih puas, dan yang terpenting — tidur yang lebih nyenyak.",
+    "content_en": "In an industry that constantly pushes us to \"ship fast and break things,\" I have found that shipping slowly — deliberately — actually produces better products that are more appreciated.\n\nIt took me a while to realize that speed is not the only metric of success. When I slow down, I give myself space to think, reflect, and refine.\n\nNow, I adopt a more deliberate approach. Every release must have a clear purpose. No more features added just because \"why not.\"\n\nThe result? More solid products, more satisfied users, and most importantly — better sleep.",
+    "read_time_id": "6 menit baca",
+    "read_time_en": "6 min read",
+    "slug": "/post/5"
+  }
+]

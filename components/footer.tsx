@@ -56,7 +56,7 @@ const iconMap: Record<string, React.ReactNode> = {
 const navLinks = [
   { label: 'Projects', href: '/projects' },
   { label: 'About', href: '/about' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Post', href: '/post' },
 ]
 
 export function Footer() {
@@ -87,8 +87,8 @@ export function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.url}
-                    target={'_blank'}
-                    rel={'noopener noreferrer'}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center w-8 h-8 border border-border text-foreground hover:bg-foreground hover:text-background transition-colors duration-150"
                     aria-label={link.label}
                   >

@@ -28,7 +28,10 @@ export function ProjectCard({
       href={url}
       className={cn(
         'group relative flex flex-col border border-border p-6 md:p-8',
-        'bg-background hover:bg-foreground transition-colors duration-200',
+        'bg-background',
+        'hover:-translate-x-0.5 hover:-translate-y-0.5',
+        'hover:shadow-[4px_4px_0px_0px_var(--border)]',
+        'transition-[transform,box-shadow] duration-200 ease-out',
         'cursor-pointer',
         className,
       )}
@@ -36,26 +39,26 @@ export function ProjectCard({
     >
       {/* Top row: number + year */}
       <div className="flex items-start justify-between mb-6">
-        <span className="font-mono text-xs text-muted-foreground group-hover:text-background/50 transition-colors duration-200">
+        <span className="font-mono text-xs text-muted-foreground">
           {number}
         </span>
         <div className="flex items-center gap-3">
-          <span className="text-xs text-muted-foreground group-hover:text-background/50 transition-colors duration-200">
+          <span className="text-xs text-muted-foreground">
             {year}
           </span>
-          <span className="text-xs uppercase tracking-wider border border-current px-2 py-0.5 group-hover:border-background/40 transition-colors duration-200">
+          <span className="text-xs uppercase tracking-wider border border-current px-2 py-0.5">
             {status}
           </span>
         </div>
       </div>
 
       {/* Project name */}
-      <h3 className="text-2xl md:text-3xl font-black tracking-tight mb-3 group-hover:text-background transition-colors duration-200 text-balance">
+      <h3 className="text-2xl md:text-3xl font-black tracking-tight mb-3 text-balance">
         {name}
       </h3>
 
       {/* Description */}
-      <p className="text-sm leading-relaxed text-muted-foreground group-hover:text-background/70 transition-colors duration-200 mb-6 flex-1">
+      <p className="text-sm leading-relaxed text-muted-foreground mb-6 flex-1">
         {description}
       </p>
 
@@ -65,7 +68,7 @@ export function ProjectCard({
           {tags.map((tag) => (
             <li
               key={tag}
-              className="text-xs uppercase tracking-wider border border-border group-hover:border-background/40 px-2 py-0.5 group-hover:text-background transition-colors duration-200"
+              className="text-xs uppercase tracking-wider border border-border px-2 py-0.5"
             >
               {tag}
             </li>
@@ -73,7 +76,7 @@ export function ProjectCard({
         </ul>
         <ArrowUpRight
           size={20}
-          className="shrink-0 text-foreground group-hover:text-background transition-colors duration-200"
+          className="shrink-0 text-foreground"
           aria-hidden="true"
         />
       </div>

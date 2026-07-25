@@ -17,12 +17,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Abby Dahlan Havizh — Student',
-    template: '%s | Abby Dahlan Havizh',
+    default: 'Abby\'s Portfolio',
+    template: '%s  Abby Dahlan Havizh',
   },
   description:
-    'Vocational high school student preparing   for internship and learning software development.',
-  keywords: ['student', 'portfolio', 'smk', 'rpl', 'software', 'internship'],
+    'Mobile and backend developer passionate about building digital applications and growing in tech.',
+  keywords: ['portfolio', 'mobile', 'backend', 'developer', 'smk', 'rpl'],
   authors: [{ name: 'Abby Dahlan Havizh' }],
   creator: 'Abby Dahlan Havizh',
 }

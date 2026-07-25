@@ -8,7 +8,7 @@ export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
-  // Avoid hydration mismatch — render nothing on the server
+  // Avoid hydration mismatch - render nothing on the server
   useEffect(() => setMounted(true), [])
 
   if (!mounted) { 

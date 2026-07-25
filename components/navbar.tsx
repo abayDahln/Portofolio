@@ -14,8 +14,13 @@ const navItems = [
   { label: 'Projects', href: '/projects' },
   { label: 'About', href: '/about' },
   { label: 'Achievements', href: '/achievements' },
-  { label: 'Blog', href: '/blog' },
+  { label: 'Post', href: '/post' },
 ]
+
+function isActive(href: string, pathname: string) {
+  if (href === '/') return pathname === '/'
+  return pathname === href || pathname.startsWith(href + '/')
+}
 
 export function Navbar() {
   const pathname = usePathname()
@@ -48,7 +53,7 @@ export function Navbar() {
           <Link
             href="/"
             className="text-sm font-bold uppercase tracking-widest hover:opacity-60 transition-opacity duration-150"
-            aria-label={`${personalData.name} — Home`}
+            aria-label={`${personalData.name} | Home`}
           >
             {personalData.name}
           </Link>
@@ -63,13 +68,13 @@ export function Navbar() {
                     'text-sm transition-colors duration-150 relative',
                     'after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-foreground',
                     'after:transition-all after:duration-150',
-                    pathname === item.href
+                    isActive(item.href, pathname)
                       ? 'font-semibold after:w-full'
                       : 'font-normal text-muted-foreground hover:text-foreground after:w-0 hover:after:w-full',
                   )}
-                  aria-current={pathname === item.href ? 'page' : undefined}
+                  aria-current={isActive(item.href, pathname) ? 'page' : undefined}
                 >
-                  {item.label === 'Home' ? t.nav.home : item.label === 'Projects' ? t.nav.projects : item.label === 'About' ? t.nav.about : item.label === 'Achievements' ? t.nav.achievements : item.label === 'Blog' ? t.nav.blog : item.label}
+                  {item.label === 'Home' ? t.nav.home : item.label === 'Projects' ? t.nav.projects : item.label === 'About' ? t.nav.about : item.label === 'Achievements' ? t.nav.achievements : item.label === 'Post' ? t.nav.blog : item.label}
                 </Link>
               </li>
             ))}
@@ -85,12 +90,12 @@ export function Navbar() {
               {language === 'id' ? 'EN' : 'ID'}
             </button>
             <ThemeToggle />
-            <Link
-              href={`mailto:${personalData.contact.email}`}
+            {/* <Link
+              href={personalData.contact.emailUrl}
               className="inline-flex items-center gap-2 text-sm font-medium bg-foreground text-background border border-border px-4 py-2 hover:bg-background hover:text-foreground transition-colors duration-150"
             >
               {t.nav.getInTouch}
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile right side: language toggle + theme toggle + hamburger */}
@@ -134,25 +139,27 @@ export function Navbar() {
                 className={cn(
                   'px-6 py-5 text-2xl font-bold tracking-tight border-b border-border',
                   'transition-colors duration-150',
-                  pathname === item.href
+                  isActive(item.href, pathname)
                     ? 'bg-foreground text-background'
                     : 'hover:bg-foreground hover:text-background',
                 )}
-                aria-current={pathname === item.href ? 'page' : undefined}
+                aria-current={isActive(item.href, pathname) ? 'page' : undefined}
               >
                 <span className="text-xs font-mono mr-4 opacity-40">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                {item.label === 'Home' ? t.nav.home : item.label === 'Projects' ? t.nav.projects : item.label === 'About' ? t.nav.about : item.label === 'Achievements' ? t.nav.achievements : item.label === 'Blog' ? t.nav.blog : item.label}
+                {item.label === 'Home' ? t.nav.home : item.label === 'Projects' ? t.nav.projects : item.label === 'About' ? t.nav.about : item.label === 'Achievements' ? t.nav.achievements : item.label === 'Post' ? t.nav.blog : item.label}
               </Link>
             ))}
-            <Link
-              href={`mailto:${personalData.contact.email}`}
-              className="px-6 py-5 text-2xl font-bold tracking-tight border-b border-border hover:bg-foreground hover:text-background transition-colors duration-150"
+            <a
+              href={personalData.contact.emailUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-5 text-2xl font-bold tracking-tight border-b border-border hover:bg-foreground hover:text-background transition-colors duration-150 block"
             >
               <span className="text-xs font-mono mr-4 opacity-40">05</span>
               {t.nav.getInTouch}
-            </Link>
+            </a>
           </nav>
         </div>
       )}

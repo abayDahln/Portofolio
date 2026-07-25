@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "date": "2025-03-05",
+    "date_display": "Mar 05, 2025",
+    "title_id": "Eksperimen Audio dengan Swift",
+    "title_en": "Audio Experiments with Swift",
+    "excerpt_id": "Bermain-main dengan CoreAudio dan Swift untuk bikin alat musik digital sederhana. Hasilnya? BeatNotch.",
+    "excerpt_en": "Playing around with CoreAudio and Swift to build a simple digital music tool. The result? BeatNotch.",
+    "content_id": "Awalnya cuma iseng pengen tahu cara kerja audio processing di macOS. Saya mulai dengan membaca dokumentasi CoreAudio dan langsung kewalahan.\n\nTapi setelah beberapa hari ngulik, saya mulai paham alur dasarnya: input \u2192 process \u2192 output. Dari situ saya bikin prototipe sederhana yang bisa generate beat.\n\nBeatNotch lahir dari eksperimen ini. Aplikasi kecil yang tinggal di menu bar dan siap merekam ide musik kapan saja. Enggak perlu buka DAW yang berat.\n\nYang paling saya suka dari proyek ini adalah saya belajar banyak tentang digital signal processing \u2014 topik yang sebelumnya terasa sangat kompleks.",
+    "content_en": "It started as a curiosity about how audio processing works on macOS. I began reading CoreAudio documentation and was immediately overwhelmed.\n\nBut after a few days of tinkering, I started to understand the basic flow: input \u2192 process \u2192 output. From there I built a simple prototype that could generate beats.\n\nBeatNotch was born from this experiment. A small app that lives in the menu bar, ready to capture musical ideas anytime. No need to open a heavy DAW.\n\nWhat I love most about this project is how much I learned about digital signal processing \u2014 a topic that previously felt incredibly complex.",
+    "read_time_id": "9 menit baca",
+    "read_time_en": "9 min read",
+    "slug": "/post/1"
+  },
+  {
+    "id": 2,
+    "date": "2025-01-17",
+    "date_display": "Jan 17, 2025",
+    "title_id": "Membangun Portfolio ini",
+    "title_en": "Building This Portfolio",
+    "excerpt_id": "Cerita di balik pembuatan portfolio ini \u2014 dari desain brutalist, pemilihan teknologi, sampai keputusan untuk tidak menggunakan CSS framework.",
+    "excerpt_en": "Behind the scenes of building this portfolio \u2014 from brutalist design, tech choices, to the decision of not using a CSS framework.",
+    "content_id": "Portfolio ini saya bangun dari nol dengan Next.js dan Tailwind CSS. Tapi yang paling menarik adalah proses desainnya.\n\nSaya sengaja memilih pendekatan brutalist: zero border-radius, palet monokrom, tipografi bold. Ini bukan tren \u2014 ini keputusan sadar untuk bikin sesuatu yang jujur dan fungsional.\n\nSetiap elemen di halaman ini punya alasan. Border hitam tegas, tidak ada gradien, tidak ada bayangan. Semua gangguan visual dihilangkan agar konten yang berbicara.\n\nProsesnya memakan waktu lebih lama dari yang saya kira, terutama untuk bikin sistem bilingual yang rapi dan handling dark mode manual.",
+    "content_en": "I built this portfolio from scratch using Next.js and Tailwind CSS. But the most interesting part was the design process.\n\nI deliberately chose a brutalist approach: zero border-radius, monochrome palette, bold typography. This is not a trend \u2014 it is a conscious decision to make something honest and functional.\n\nEvery element on this page has a reason. Sharp black borders, no gradients, no shadows. All visual noise removed so the content speaks.\n\nThe process took longer than I expected, especially building a clean bilingual system and handling dark mode manually.",
+    "read_time_id": "4 menit baca",
+    "read_time_en": "4 min read",
+    "slug": "/post/2"
+  },
+  {
+    "id": 3,
+    "date": "2024-11-30",
+    "date_display": "Nov 30, 2024",
+    "title_id": "Persiapan LKS Tingkat Provinsi",
+    "title_en": "Preparing for Provincial LKS",
+    "excerpt_id": "Persiapan untuk Lomba Kompetensi Siswa tingkat provinsi bidang IT Software Solution for Business. Latihan, strategi, dan pelajaran yang didapat.",
+    "excerpt_en": "Preparing for the provincial student competition in IT Software Solution for Business. Practice, strategy, and lessons learned.",
+    "content_id": "Setelah berhasil di tingkat wilayah, sekarang saya mempersiapkan diri untuk LKS tingkat provinsi. Tingkat persaingannya jauh lebih ketat.\n\nFokus utama latihan saya adalah database design dan optimasi query SQL. Di kompetisi sebelumnya, kelemahan saya ada di bagian ini.\n\nSaya juga banyak latihan soal-soal tahun sebelumnya dan belajar dari peserta senior. Strategi yang paling membantu adalah manajemen waktu \u2014 di kompetisi, waktu adalah segalanya.\n\nAkhirnya saya berhasil meraih juara 2 di tingkat provinsi. Hasil yang memuaskan, tapi masih ada ruang untuk improvement.",
+    "content_en": "After succeeding at the regional level, I am now preparing for the provincial LKS. The competition is much tougher.\n\nMy main practice focus is database design and SQL query optimization. In previous competitions, this was my weakness.\n\nI also practiced with previous years' problems and learned from senior participants. The most helpful strategy was time management \u2014 in competitions, time is everything.\n\nI eventually achieved 2nd place at the provincial level. A satisfying result, but there is still room for improvement.",
+    "read_time_id": "6 menit baca",
+    "read_time_en": "6 min read",
+    "slug": "/post/3"
+  }
+]

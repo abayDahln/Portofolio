@@ -12,7 +12,6 @@ export type TranslationContent = {
     getInTouch: string
   }
   home: {
-    availability: string
     heroTitle: string
     heroDescription: string
     heroAbout: string
@@ -77,6 +76,11 @@ export type TranslationContent = {
       shipTitle: string
       shipDescription: string
     }
+    detail: {
+      backToProjects: string
+      visitProject: string
+      githubRepo: string
+    }
   }
   blog: {
     pageTitle: string
@@ -98,6 +102,9 @@ export type TranslationContent = {
     discussArticleTitle: string
     discussArticleDescription: string
     sendMessage: string
+    detail: {
+      backToBlog: string
+    }
   }
   achievements: {
     pageTitle: string
@@ -108,6 +115,9 @@ export type TranslationContent = {
     firstPlace: string
     secondPlace: string
     yearsActive: string
+    detail: {
+      backToAchievements: string
+    }
   }
   footer: {
     rights: string
@@ -121,14 +131,13 @@ export const translations: Record<Language, TranslationContent> = {
       projects: 'Proyek',
       about: 'Tentang',
       achievements: 'Prestasi',
-      blog: 'Blog',
+      blog: 'Post',
       getInTouch: 'Hubungi Saya',
     },
     home: {
-      availability: 'Siap untuk PKL',
       heroTitle: 'Belajar, membangun, dan terus berkembang.',
       heroDescription: 'Saya {name}, {about}',
-      heroAbout: 'murid SMK yang sedang mempersiapkan PKL dan belajar membangun aplikasi digital.',
+      heroAbout: 'seseorang yang tertarik di bidang IT, khususnya mobile dan backend developer, dan belajar membangun aplikasi digital.',
       viewProjects: 'Lihat Proyek',
       aboutMe: 'Tentang Saya',
       stats: {
@@ -140,28 +149,28 @@ export const translations: Record<Language, TranslationContent> = {
       featuredProjects: 'Proyek Unggulan',
       featuredProjectsSubtitle: 'Karya yang dipilih',
       allProjects: 'Semua Proyek',
-      recentArticles: 'Artikel Terbaru',
-      recentArticlesSubtitle: 'Tulisan',
-      allArticles: 'Semua Artikel',
+      recentArticles: 'Post Terbaru',
+      recentArticlesSubtitle: 'Aktivitas',
+      allArticles: 'Semua Post',
       contactTitle: 'Yuk bekerja sama',
       contactSubtitle: 'Punya ide proyek?',
       contactButton: 'Kirim Pesan',
     },
     about: {
       pageTitle: 'Tentang',
-      pageDescription: 'Saya adalah siswa SMK Negeri 10 Jakarta jurusan Rekayasa Perangkat Lunak (RPL) yang sedang mempersiapkan diri untuk Praktik Kerja Lapangan (PKL). Memiliki ketertarikan pada pengembangan perangkat lunak, khususnya backend development, serta terus mengembangkan kemampuan dalam membangun aplikasi, memahami logika pemrograman, dan mengelola database.',
+      pageDescription: 'Saya adalah seseorang yang tertarik di bidang IT, khususnya mobile dan backend developer. Memiliki ketertarikan pada pengembangan perangkat lunak, khususnya mobile dan backend development, serta terus mengembangkan kemampuan dalam membangun aplikasi, memahami logika pemrograman, dan mengelola database.',
       biography: 'Biografi',
       name: 'Nama',
       role: 'Peran',
       email: 'Email',
       phone: 'Telepon',
       intro: 'Terbiasa mempelajari teknologi baru secara mandiri melalui berbagai proyek yang dikerjakan. Memiliki kemampuan berpikir logis dan problem solving yang didukung oleh pemahaman matematika yang baik, sehingga mampu menganalisis permasalahan dan menyusun solusi secara terstruktur.',
-      body: 'Berkomitmen untuk terus meningkatkan kemampuan teknis maupun nonteknis, mudah beradaptasi dengan lingkungan baru, serta siap belajar dan berkontribusi dalam dunia kerja melalui pengalaman PKL.',
+      body: 'Berkomitmen untuk terus meningkatkan kemampuan teknis maupun nonteknis, mudah beradaptasi, serta siap belajar dan berkontribusi dalam dunia pengembangan perangkat lunak.',
       sayHello: 'Sapa Saya',
       viewProjects: 'Lihat Proyek',
       expertise: 'Keahlian',
       skillsTitle: 'Keahlian & Alat',
-      skillsDescription: 'Selalu belajar. Inilah alat yang paling sering saya gunakan.',
+      skillsDescription: 'Inilah alat yang paling sering saya gunakan.',
       experience: 'Pendidikan',
       history: 'Riwayat Pendidikan',
       values: 'Nilai',
@@ -190,12 +199,17 @@ export const translations: Record<Language, TranslationContent> = {
         shipTitle: 'Rilis',
         shipDescription: 'Iterasi secara terbuka. Rilis lebih awal, kumpulkan feedback nyata, dan terus perbaiki.',
       },
+      detail: {
+        backToProjects: 'Kembali ke Proyek',
+        visitProject: 'Kunjungi Proyek',
+        githubRepo: 'Repositori GitHub',
+      },
     },
     blog: {
-      pageTitle: 'Blog',
+      pageTitle: 'Post',
       pageDescription:
-        'Pemikiran tentang desain perangkat lunak, minimalisme, membangun produk, dan seni membuat hal yang berfungsi dengan baik.',
-      writing: 'Tulisan',
+        'Catatan tentang hal-hal yang sedang saya kerjakan, pelajari, dan bangun.',
+      writing: 'Aktivitas',
       latest: 'Terbaru',
       topics: {
         all: 'Semua',
@@ -204,14 +218,17 @@ export const translations: Record<Language, TranslationContent> = {
         products: 'Produk',
         process: 'Proses',
       },
-      allArticles: 'Semua Artikel',
+      allArticles: 'Semua Post',
       posts: 'Posting',
       newsletterTitle: 'Tetap terhubung',
-      newsletterDescription: 'Dapatkan artikel terbaru dan pembaruan project.',
+      newsletterDescription: 'Dapatkan update terbaru tentang aktivitas dan project saya.',
       connect: 'Hubungkan',
-      discussArticleTitle: 'Ingin membahas sebuah artikel?',
-      discussArticleDescription: 'Saya membalas setiap pesan yang thoughtful. Hubungi kapan saja.',
+      discussArticleTitle: 'Tertarik dengan aktivitas ini?',
+      discussArticleDescription: 'Kalau ada yang ingin ditanyakan atau didiskusikan, hubungi saja.',
       sendMessage: 'Kirim Pesan',
+      detail: {
+        backToBlog: 'Kembali ke Post',
+      },
     },
     achievements: {
       pageTitle: 'Prestasi',
@@ -222,6 +239,9 @@ export const translations: Record<Language, TranslationContent> = {
       firstPlace: 'Penghargaan Juara 1',
       secondPlace: 'Penghargaan Juara 2',
       yearsActive: 'Tahun Aktif',
+      detail: {
+        backToAchievements: 'Kembali ke Prestasi',
+      },
     },
     footer: {
       rights: 'Hak cipta',
@@ -233,14 +253,13 @@ export const translations: Record<Language, TranslationContent> = {
       projects: 'Projects',
       about: 'About',
       achievements: 'Achievements',
-      blog: 'Blog',
+      blog: 'Post',
       getInTouch: 'Get in Touch',
     },
     home: {
-      availability: 'Ready for internship',
       heroTitle: 'Learning, building, and growing every day.',
-      heroDescription: "I'm {name} — {about}",
-      heroAbout: 'a vocational high school student preparing for an internship and learning to build digital applications.',
+      heroDescription: "I'm {name}, {about}",
+      heroAbout: 'someone interested in IT, specifically mobile and backend development, and learning to build digital applications.',
       viewProjects: 'View Projects',
       aboutMe: 'About Me',
       stats: {
@@ -252,28 +271,28 @@ export const translations: Record<Language, TranslationContent> = {
       featuredProjects: 'Featured Projects',
       featuredProjectsSubtitle: 'Selected Work',
       allProjects: 'All Projects',
-      recentArticles: 'Recent Articles',
-      recentArticlesSubtitle: 'Writing',
-      allArticles: 'All Articles',
+      recentArticles: 'Recent Posts',
+      recentArticlesSubtitle: 'Activities',
+      allArticles: 'All Posts',
       contactTitle: 'Let\'s work together',
       contactSubtitle: 'Got a project in mind?',
       contactButton: 'Send a Message',
     },
     about: {
       pageTitle: 'About',
-      pageDescription: 'I am a Software Engineering (RPL) student at SMK Negeri 10 Jakarta, currently preparing for my internship. I have a strong interest in software development, particularly backend development, and continuously improve my skills in building applications, understanding programming concepts, and working with databases.',
+      pageDescription: 'I am someone interested in IT, particularly mobile and backend development. I have a strong interest in software development, especially mobile and backend, and continuously improve my skills in building applications, understanding programming concepts, and working with databases.',
       biography: 'Biography',
       name: 'Name',
       role: 'Role',
       email: 'Email',
       phone: 'Phone',
       intro: "I enjoy learning new technologies through self-driven projects and practical experience. With a solid foundation in logical thinking and mathematics, I am able to analyze problems and develop structured, effective solutions.",
-      body: 'I am committed to continuous learning, adaptable to new environments, and eager to contribute while gaining valuable experience through my internship.',
+      body: 'I am committed to continuous learning, adaptable to new environments, and eager to contribute and grow as a software developer.',
       sayHello: 'Say Hello',
       viewProjects: 'View Projects',
       expertise: 'Expertise',
       skillsTitle: 'Skills & Tools',
-      skillsDescription: 'Always learning. These are the tools I reach for first.',
+      skillsDescription: 'These are the tools I reach for first.',
       experience: 'Education',
       history: 'Education History',
       values: 'Values',
@@ -302,12 +321,17 @@ export const translations: Record<Language, TranslationContent> = {
         shipTitle: 'Ship',
         shipDescription: 'Iterate in public. Ship early, gather real feedback, and continuously improve.',
       },
+      detail: {
+        backToProjects: 'Back to Projects',
+        visitProject: 'Visit Project',
+        githubRepo: 'GitHub Repository',
+      },
     },
     blog: {
-      pageTitle: 'Blog',
+      pageTitle: 'Post',
       pageDescription:
-        'Thoughts on software design, minimalism, building products, and making things that work well.',
-      writing: 'Writing',
+        'Notes on things I am working on, learning, and building.',
+      writing: 'Activities',
       latest: 'Latest',
       topics: {
         all: 'All',
@@ -316,14 +340,17 @@ export const translations: Record<Language, TranslationContent> = {
         products: 'Products',
         process: 'Process',
       },
-      allArticles: 'All Articles',
+      allArticles: 'All Posts',
       posts: 'Posts',
       newsletterTitle: 'Stay in the loop',
-      newsletterDescription: 'Get the latest articles and project updates.',
+      newsletterDescription: 'Get the latest updates on my activities and projects.',
       connect: 'Connect',
-      discussArticleTitle: 'Want to discuss an article?',
-      discussArticleDescription: 'I reply to every thoughtful message. Reach out any time.',
+      discussArticleTitle: 'Interested in this activity?',
+      discussArticleDescription: 'If you have any questions or want to discuss, feel free to reach out.',
       sendMessage: 'Send a Message',
+      detail: {
+        backToBlog: 'Back to Post',
+      },
     },
     achievements: {
       pageTitle: 'Achievements',
@@ -334,6 +361,9 @@ export const translations: Record<Language, TranslationContent> = {
       firstPlace: '1st Place Awards',
       secondPlace: '2nd Place Awards',
       yearsActive: 'Years Active',
+      detail: {
+        backToAchievements: 'Back to Achievements',
+      },
     },
     footer: {
       rights: 'All rights reserved',

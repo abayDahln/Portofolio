@@ -5,7 +5,7 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import { Section, Container, SectionLabel } from '@/components/section'
 import { CTAButton } from '@/components/cta-button'
 import { ProjectCard } from '@/components/project-card'
-import { BlogCard } from '@/components/blog-card'
+import { PostCard } from '@/components/post-card'
 import { personalData, projects, blogPosts, stats } from '@/lib/data'
 import { useLanguage } from '@/lib/i18n'
 
@@ -21,7 +21,6 @@ export default function HomePage() {
     ...post,
     title: post.title[language],
     excerpt: post.excerpt[language],
-    readTime: post.readTime[language],
   }))
 
   return (
@@ -34,13 +33,6 @@ export default function HomePage() {
       >
         <Container className="flex flex-col md:flex-1 md:justify-center pt-10 md:pt-16 pb-10 md:pb-16">
           {/* Availability badge */}
-          <div className="inline-flex items-center gap-2 border border-border px-3 py-1.5 w-fit mb-10">
-            <span className="w-1.5 h-1.5 bg-black" aria-hidden="true" />
-            <span className="text-xs uppercase tracking-widest font-medium">
-              {t.home.availability}
-            </span>
-          </div>
-
           {/* Headline */}
           <h1 className="text-[clamp(3rem,10vw,7rem)] font-black leading-[0.92] tracking-tighter mb-8 text-balance">
             {t.home.heroTitle}
@@ -53,12 +45,12 @@ export default function HomePage() {
 
           {/* CTAs */}
           <div className="flex flex-wrap items-center gap-3">
-            <CTAButton href="/projects" variant="primary" size="lg">
+            <CTAButton href="/about" variant="primary" size="lg">
+              {t.home.aboutMe}
+            </CTAButton>
+            <CTAButton href="/projects" variant="outline" size="lg">
               {t.home.viewProjects}
               <ArrowRight size={16} className="ml-2" aria-hidden="true" />
-            </CTAButton>
-            <CTAButton href="/about" variant="outline" size="lg">
-              {t.home.aboutMe}
             </CTAButton>
           </div>
         </Container>
@@ -137,21 +129,31 @@ export default function HomePage() {
               </h2>
             </div>
             <Link
-              href="/blog"
+              href="/post"
               className="hidden md:flex items-center gap-2 text-sm font-medium relative text-muted-foreground hover:text-foreground transition-colors duration-150 after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-foreground after:w-0 hover:after:w-full after:transition-all after:duration-150">
               {t.home.allArticles}
               <ArrowRight size={14} aria-hidden="true" />
             </Link>
           </div>
 
-          <div className="border-t border-black">
+          <div className="border-t border-border">
             {recentPosts.map((post) => (
-              <BlogCard key={post.id} {...post} variant="list" />
+              <PostCard
+                key={post.id}
+                id={post.id}
+                images={post.images}
+                date={post.date}
+                dateISO={post.dateISO}
+                title={post.title}
+                excerpt={post.excerpt}
+                slug={post.slug}
+                variant="compact"
+              />
             ))}
           </div>
 
           <div className="mt-6 md:hidden">
-            <CTAButton href="/blog" variant="outline" className="w-full justify-center">
+            <CTAButton href="/post" variant="outline" className="w-full justify-center">
               {t.home.allArticles}
               <ArrowRight size={14} className="ml-2" aria-hidden="true" />
             </CTAButton>
@@ -172,7 +174,9 @@ export default function HomePage() {
               </h2>
             </div>
             <a
-              href={`mailto:${personalData.contact.email}`}
+              href={personalData.contact.emailUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-3 border border-white px-8 py-4 text-base font-medium hover:bg-white hover:text-black transition-colors duration-150 shrink-0"
             >
               {t.home.contactButton}

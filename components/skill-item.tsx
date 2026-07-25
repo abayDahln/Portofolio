@@ -1,4 +1,5 @@
 import { cn } from '@/lib/utils'
+import { skillUrls } from '@/lib/data'
 
 interface SkillItemProps {
   skill: string
@@ -6,6 +7,8 @@ interface SkillItemProps {
 }
 
 export function SkillItem({ skill, className }: SkillItemProps) {
+  const url = skillUrls[skill]
+
   return (
     <li
       className={cn(
@@ -18,7 +21,18 @@ export function SkillItem({ skill, className }: SkillItemProps) {
         className="w-1.5 h-1.5 bg-foreground shrink-0"
         aria-hidden="true"
       />
-      <span className="text-sm font-medium">{skill}</span>
+      {url ? (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm font-medium relative after:absolute after:left-0 after:-bottom-0.5 after:h-px after:bg-foreground after:transition-all after:duration-150 after:w-0 hover:after:w-full"
+        >
+          {skill}
+        </a>
+      ) : (
+        <span className="text-sm font-medium">{skill}</span>
+      )}
     </li>
   )
 }

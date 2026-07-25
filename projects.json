@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "number": "01",
+    "name_id": "HomeCloud",
+    "name_en": "HomeCloud",
+    "description_id": "Solusi penyimpanan cloud pribadi self-hosted premium dengan privasi penuh. Kelola dan sinkronisasi file Anda di perangkat Anda sendiri.",
+    "description_en": "A premium self-hosted cloud storage solution designed for full privacy and control over your digital life.",
+    "tags": [
+      "Flutter",
+      "Go",
+      "React",
+      "Docker"
+    ],
+    "year": "2025",
+    "status_id": "Sumber Terbuka",
+    "status_en": "Open Source",
+    "url": "/projects/1",
+    "live_url": "https://home-cloud-app.vercel.app"
+  },
+  {
+    "id": 2,
+    "number": "02",
+    "name_id": "UnstableStudio",
+    "name_en": "UnstableStudio",
+    "description_id": "IDE modern dengan performa tinggi, desain aesthetic, dan kecerdasan AI. Dibangun dengan Flutter untuk pengalaman coding yang mulus.",
+    "description_en": "The next-gen aesthetic and high-performance IDE built with Flutter. Combining beautiful Material 3 design with AI intelligence.",
+    "tags": [
+      "Flutter",
+      "Dart",
+      "Riverpod",
+      "Gemini AI"
+    ],
+    "year": "2025",
+    "status_id": "Dalam Proses",
+    "status_en": "In Progress",
+    "url": "/projects/2",
+    "live_url": "https://unstable-studio.vercel.app"
+  },
+  {
+    "id": 3,
+    "number": "03",
+    "name_id": "EsemkaSchoolLibrary",
+    "name_en": "EsemkaSchoolLibrary",
+    "description_id": "Sistem manajemen perpustakaan berbasis C# WinForms dengan LINQ to SQL dan SQL Server. Kelola buku, anggota, kategori, dan peminjaman.",
+    "description_en": "A library management system built with C# WinForms, LINQ to SQL, and SQL Server. Manage books, members, categories, and borrowing.",
+    "tags": [
+      "C#",
+      "WinForms",
+      "LINQ to SQL",
+      "SQL Server"
+    ],
+    "year": "2025",
+    "status_id": "Beta",
+    "status_en": "Beta",
+    "url": "/projects/3"
+  },
+  {
+    "id": 4,
+    "number": "04",
+    "name_id": "Pixelette",
+    "name_en": "Pixelette",
+    "description_id": "Aplikasi desktop ringan untuk mengekstrak palet warna dari gambar dan mengambil warna dari layar. Cocok untuk desainer dan developer.",
+    "description_en": "A lightweight desktop app to extract color palettes from images and pick colors from screen. Perfect for designers and developers.",
+    "tags": [
+      "C#",
+      "WinForms",
+      ".NET",
+      "Desktop"
+    ],
+    "year": "2025",
+    "status_id": "Dirilis",
+    "status_en": "Released",
+    "url": "/projects/4",
+    "live_url": "https://pixelette.vercel.app"
+  },
+  {
+    "id": 5,
+    "number": "05",
+    "name_id": "SpareWMS",
+    "name_en": "SpareWMS",
+    "description_id": "Sistem manajemen inventori spare part warehouse dengan tracking real-time, transaksi otomatis, dan role-based access control.",
+    "description_en": "A spare part warehouse inventory management system with real-time tracking, automated transactions, and role-based access control.",
+    "tags": [
+      "C#",
+      "WinForms",
+      "LINQ to SQL",
+      "SQL Server"
+    ],
+    "year": "2026",
+    "status_id": "Dirilis",
+    "status_en": "Released",
+    "url": "/projects/5"
+  },
+  {
+    "id": 6,
+    "number": "06",
+    "name_id": "Laundrly",
+    "name_en": "Laundrly",
+    "description_id": "Sistem manajemen transaksi dan layanan laundry berbasis desktop dengan tracking status real-time dan manajemen karyawan.",
+    "description_en": "A desktop-based laundry management system with real-time transaction tracking and employee management.",
+    "tags": [
+      "C#",
+      "WinForms",
+      "LINQ to SQL",
+      "SQL Server"
+    ],
+    "year": "2026",
+    "status_id": "Dirilis",
+    "status_en": "Released",
+    "url": "/projects/6"
+  },
+  {
+    "id": 7,
+    "number": "07",
+    "name_id": "BreezeCommerce",
+    "name_en": "BreezeCommerce",
+    "description_id": "Aplikasi e-commerce desktop dengan sistem keranjang belanja, multi-metode pembayaran, dan role-based access control untuk admin dan pelanggan.",
+    "description_en": "A desktop e-commerce application with shopping cart system, multi-payment methods, and role-based access control for admin and customers.",
+    "tags": [
+      "C#",
+      "WinForms",
+      "LINQ to SQL",
+      "SQL Server"
+    ],
+    "year": "2026",
+    "status_id": "Dirilis",
+    "status_en": "Released",
+    "url": "/projects/7"
+  }
+]
